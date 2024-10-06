@@ -150,7 +150,7 @@ toggleThemeButton.addEventListener("click", () => {
 
 // Delete all chats from local storage when button is clicked
 deleteChatButton.addEventListener("click", () => {
-  if (confirm("Are you sure you want to delete all the chats?")) {
+  if (confirm("채팅을 삭제하시겠습니까? 더 이상 이 채팅을 볼 수 없게 됩니다.")) {
     localStorage.removeItem("saved-chats");
     loadDataFromLocalstorage();
   }
